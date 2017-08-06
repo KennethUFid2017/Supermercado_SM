@@ -8,5 +8,7 @@ Simple CRUD ,MySQL , JPA ,Primefaces for Glasfish in Netbeans.
 2.Make sure that you have the MySQL driver in your Glasfish Library Folder ( For example : C:\Program Files\glassfish4\glassfish\lib ) ,so if you havent copy and paste this file.jar:
 http://www.java2s.com/Code/JarDownload/com.mysql/com.mysql.jdbc_5.1.5.jar.zip
 
-3.Then Open your Netbeans and Open this Maven Project: https://github.com/LeoCR/Supermercado_SM/tree/master/supermarket_sm/supermercado-sm
+3.Edit the glassfish-resources.xml for set your MySQL Credentials such as : Password , Username ,ServerName,Port ,URL  (https://github.com/LeoCR/Supermercado_SM/blob/master/supermarket_sm/supermercado-sm/src/main/webapp/WEB-INF/glassfish-resources.xml ) ,and make sure that all the credentials works.
+
+4.Then Open your Netbeans and Open this Maven Project: https://github.com/LeoCR/Supermercado_SM/tree/master/supermarket_sm/supermercado-sm
 and Run with Glasfish.
