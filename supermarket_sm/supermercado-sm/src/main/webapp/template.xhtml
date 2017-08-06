@@ -6,11 +6,12 @@
       xmlns:p="http://primefaces.org/ui">
 
     <h:head>
-        <title><ui:insert name="title">Default Title</ui:insert></title>
-        <link href="./../../../resources/css/dev/admin.css" rel="stylesheet" type="text/css"/>
-         
+        <title><ui:insert name="title">Panel de Administraci&oacute;n</ui:insert></title>
+        <ui:insert name="custom_css">
+            <link href="http://localhost:8080/supermercado-sm/resources/css/dev/admin.css" rel="stylesheet" type="text/css" media="all"/>
         <h:outputStylesheet library="css" name="jsfcrud.css"/>
         <h:outputScript library="js" name="jsfcrud.js"/>
+        </ui:insert>
     </h:head>
 
     <h:body> 
@@ -56,7 +57,9 @@
         <main id="main" class="main_content">
         <p:layout fullPage="true">
            <!-- <p:layoutUnit position="north" size="65" header="#{bundle.AppName}">
-            </p:layoutUnit>-->
+               
+            </p:layoutUnit>
+-->
             <p:layoutUnit position="south" size="60">
                 <ui:insert name="footer"/>
             </p:layoutUnit>
