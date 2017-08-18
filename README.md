@@ -22,7 +22,7 @@ https://computingat40s.wordpress.com/how-to-setup-a-jdbc-connection-in-glassfish
 4.Review your Glasfish libraries and make sure that you have fixed the library org.eclipse.persistence.moxy.jar on the root of your Glasfish Server $FOLDER_INSTALL_GLASSFISH/glassfish/modules/org.eclipse.persistence.moxy.jar ,because the Glasfish have this Bug:
 https://bugs.eclipse.org/bugs/show_bug.cgi?id=463169  ,so for fix it I replaced the org.eclipse.persistence.moxy.jar for this new one https://mega.nz/#!7UghGLJI!jQVt3CguE0GHFmsV_2xbaQzTDKMCjCeBQ9neFIhQgYU   and the Bug of Glasfish was solved.
 
-5.In your Glassfish Admin Console create an JDBC Pool Connection called 'mysql_supermarket_sm_rootPool' set your MySQL Credentials such as : Password , Username ,ServerName,Port ,URL equals to glassfish-resources.xml ,then Add new Property and set the driverClass and in the Value write com.mysql.jdbc.Driver.
+5.In your Glassfish Admin Console create an JDBC Pool Connection called 'mysql_supermarket_sm_rootPool' set your MySQL Credentials such as : Password , Username ,ServerName,Port ,URL equals to glassfish-resources.xml ,then Add new Property and set the driverClass and in the Value write com.mysql.jdbc.Driver   , then create an JDBC Resource called 'jdbc/supermercado_sm' inside the Glasfish Admin Console .
 
 6.Then Open your Netbeans and Open this Maven Web Project: https://github.com/LeoCR/Supermercado_SM/tree/master/supermarket_sm/supermercado-sm
 and Right Click on the project ,then select Clean and Build.
