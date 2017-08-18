@@ -1,4 +1,4 @@
-# JSF JPA CRUD Primefaces with MySQL
+# JSF JPA RESTFUl CRUD Primefaces with MySQL
 
 
 Simple CRUD ,MySQL , JPA ,Primefaces for Glasfish in Netbeans.
